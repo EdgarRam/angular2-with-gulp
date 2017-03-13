@@ -32,7 +32,10 @@ config.foldersPath = {
 		components:  `${source}/styles/components/**/*.styl`
     },
     ts: {
-        src: `${source}/scripts/**/*.ts`,
+        src: [
+			`${source}/scripts/**/*.ts`,
+			`!${source}/scripts/systemjs.config.ts`
+		],
 		build: `${build}/scripts`
     }
 };
