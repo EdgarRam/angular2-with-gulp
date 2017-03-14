@@ -1,0 +1,18 @@
+nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+    a( class="navbar-brand" href="#") {{title}} 
+    div.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav.mr-auto
+            li.nav-item(routerLinkActive="active" )
+                a.nav-link( routerLink="/dashboard" ) Dashboard
+            li.nav-item(routerLinkActive="active" )
+                a.nav-link( routerLink="/heroes" routerLinkActive="active" ) Heroes
+            li.nav-item(routerLinkActive="active" )
+                a.nav-link( routerLink="/accordion" routerLinkActive="active" ) Accordion
+                    
+            
+        form.form-inline.my-2.my-lg-0
+            input.form-control.mr-sm-2( type="text" placeholder="Search" )
+            button.btn.btn-outline-success.my-2.my-sm-0( type="submit") Search
+ 
+    
+    

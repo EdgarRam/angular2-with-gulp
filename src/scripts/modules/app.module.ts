@@ -12,6 +12,7 @@ import { HeroDetailComponent } from '../components/hero-detail.component';
 import { HeroesComponent }     from '../components/heroes.component';
 import { DashboardComponent }     from '../components/dashboard.component';
 import { Accordion }     from '../components/accordion.component';
+import { Navigation }     from '../components/nav.component';
 
 import { HeroService } from '../services/hero.service';
 import { AppRoutingModule }     from './routing.module';
@@ -29,10 +30,12 @@ import { AppRoutingModule }     from './routing.module';
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    Accordion
+    Accordion,
+    Navigation
   ],
   providers: [
     HeroService,
+    //used to configure the Location service to represent its state in the hash fragment of the browser's URL.
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [ AppComponent ]
@@ -42,6 +45,5 @@ export class AppModule {
     location: Location;
     constructor(location: Location) {
         this.location = location;
-        console.log(location.path())
     }
 }
