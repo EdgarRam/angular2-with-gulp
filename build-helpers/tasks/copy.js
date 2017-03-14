@@ -4,6 +4,7 @@ module.exports = ( config ) =>{
         'zone.js',
         'reflect-metadata',
         'systemjs',
+        '@ng-bootstrap',
     ]
     var copyNode = copy.map(function(val){
         return `${config.foldersPath.src}/../node_modul**/${val}/**`;

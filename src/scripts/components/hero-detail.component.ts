@@ -9,7 +9,7 @@ import { Hero } from '../class/hero'
 
 @Component({
   selector: 'my-hero-detail',
-  templateUrl: 'partials/hero-detail.html',
+  templateUrl: 'components/hero-detail.html',
 })
 
 export class HeroDetailComponent implements OnInit {

@@ -25,6 +25,7 @@
     "zone.js": "^0.6.25"
   },
   "devDependencies": {
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.20",
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
